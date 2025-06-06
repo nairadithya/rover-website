@@ -134,6 +134,10 @@ export interface Stat {
 
 export interface Item {
   title?: string;
+  name?: string;
+  devHandle?: string;
+  subdivision?: string;
+  role?: string;
   description?: string;
   icon?: string;
   classes?: Record<string, string>;
