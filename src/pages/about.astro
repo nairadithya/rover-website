@@ -1,10 +1,10 @@
 ---
 import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
-import Hero from '~/components/widgets/Hero.astro';
-import Stats from '~/components/widgets/Stats.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import Button from '~/components/ui/Button.astro';
+import { YouTube } from 'astro-embed';
 
 const metadata = {
   title: 'About us',
@@ -12,26 +12,39 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- Hero Widget ******************* -->
+  <!-- About Us Section ******************* -->
+  <section class="bg-gray-50 dark:bg-slate-900 py-16">
+    <div class="container mx-auto px-4">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">About Us</h2>
+        <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
+          Team Odyssey is a dynamic group of innovators committed to pushing the boundaries of technology and creativity. We work across domains to build experiences that solve real-world problems and leave a lasting impact.
+        </p>
+        <Button
+          variant="primary"
+          target="_blank"
+          text="Sponsor Us"
+          href="https://github.com/onwidget/astrowind"
+          icon="tabler:heart-handshake"
+          class="w-full sm:w-auto"
+        />
+      </div>
+    </div>
+  </section>
 
-  <Hero
-    tagline="About us"
-    image={{
-      src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Caos Image',
-    }}
-  >
-    <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white"> Beautiful Website Templates</span>
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
-    </Fragment>
-  </Hero>
+  <div class="my-8 flex justify-center">
+    <div style="width:100%;max-width:900px;aspect-ratio:16/9;">
+      <iframe 
+        src="https://www.youtube.com/embed/kf187VukHJA?si=sbejPwf7c9dvRtiL" 
+        title="IRC (International Rover Challenge) | Team Odyssey | AVVB | Rover Functionality Demonstration" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen
+        style="width:100%;height:100%;border-radius:12px;"
+      ></iframe>
+    </div>
+  </div>
 
   <Features3
     title="Meet our team"
@@ -75,43 +88,17 @@ const metadata = {
           'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
         icon: 'tabler:flask',
       },
-    ]},
+    ]}
     image={{
       src: '~/assets/images/rover-team.png',
       alt: 'Colorful Image',
     }}
   />
 
-
   <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
-    items={[
-      {
-        title: 'Customer-centric approach',
-        description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
-      },
-      {
-        title: 'Constant Improvement',
-        description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
-      },
-      {
-        title: 'Ethical Practices',
-        description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
-      },
-    ]}
-  />
-
-  <!-- Steps2 Widget ****************** -->
-
   <Steps2
     title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+    subtitle="Our team proudly secured 6th place in IRDC 2020 and ranked among the top 20 in IRC 2020, showcasing consistent performance on global platforms. We placed 23rd in the ISRO Rover Challenge 2024 and recently qualified for the IRC 2025 finals, ranking 17th in the SDDR phase. These milestones reflect our dedication to innovation, engineering excellence, and collaborative problem-solving."
     isReversed={true}
     callToAction={{
       text: 'See more',
@@ -119,69 +106,47 @@ const metadata = {
     }}
     items={[
       {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
-        icon: 'tabler:globe',
+        title: '6th place in IRDC 2020',
+        description: '',
+        icon: 'tabler:award',
       },
       {
-        title: 'Positive customer feedback and reviews',
-        description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
-        icon: 'tabler:message-star',
+        title: 'Top 20 in IRC 2020',
+        description: '',
+        icon: 'tabler:award',
       },
       {
-        title: 'Awards and recognition as industry experts',
-        description:
-          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
+        title: '17th place in IRC 2025',
+        description: '',
         icon: 'tabler:award',
       },
     ]}
   />
 
   <!-- Features2 Widget ************** -->
-
   <Features2
     title="Our locations"
     tagline="Find us"
-    columns={4}
+    columns={1}
     items={[
       {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
-      },
-      {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
-      },
-      {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
-      },
-      {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
+        title: 'Amrita School of Engineering, Bengaluru',
+        description: 'Amrita Vishwa Vidyapeetham, Kasavanahalli, Carmelaram P.O., Bengaluru, Karnataka 560035',
       },
     ]}
   />
 
   <!-- Features2 Widget ************** -->
-
   <Features2
     title="Technical Support"
     tagline="Contact us"
-    columns={2}
+    columns={1}
     items={[
       {
-        title: 'Chat with us',
+        title: 'Email us',
         description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
-        icon: 'tabler:messages',
-      },
-      {
-        title: 'Call us',
-        description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
-        icon: 'tabler:headset',
+          'Reach out to us at: <a href="mailto:rover_avvb@blr.amrita.edu" class="text-primary underline">rover_avvb@blr.amrita.edu</a>',
+        icon: 'tabler:mail',
       },
     ]}
   />
