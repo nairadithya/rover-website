@@ -1,4 +1,4 @@
-/** @type {import('prettier').Config} */
+/check** @type {import('prettier').Config} */
 module.exports = {
   printWidth: 120,
   semi: true,
