@@ -1,246 +1,236 @@
 const teams = {
+  Mechanical: [
+    {
+      name: 'Ruthvik',
+      role: 'Team Lead',
+      subdivision: 'Mechanical',
+    },
 
-    // -------- MECHANICAL
+    {
+      name: 'Batchu B V Aashish',
+      role: 'Team Leader',
+      subdivision: 'Mechanical ARM',
+    },
 
-    "Mechanical": [
+    {
+      name: 'Yedugundla Venkata Sai Sri Harsha',
+      subdivision: 'Mechanical ARM',
+    },
 
-        {
-            name: "Ruthvik",
-            role: "Team Lead",
-            subdivision: "Mechanical"
-        },
+    {
+      name: 'Sivakoti Satwik',
+      subdivision: 'Mechanical ARM',
+    },
 
-        {
-            name: "Batchu B V Aashish",
-            role: "Team Leader",
-            subdivision: "Mechanical ARM"
-        },
+    {
+      name: 'Paida Advaith',
+      role: 'Team Leader',
+      subdivision: 'Chassis',
+    },
 
-        {
-            name: "Yedugundla Venkata Sai Sri Harsha",
-            subdivision: "Mechanical ARM"
-        },
-        
-        {
-            name: "Sivakoti Satwik",
-            subdivision: "Mechanical ARM"
-        },
+    {
+      name: 'Sree Chaitanya Anisingaraju',
+      subdivision: 'Chassis',
+    },
 
-        {
-            name: "Paida Advaith",
-            role: "Team Leader",
-            subdivision: "Chassis"
-        },
+    {
+      name: 'A.C Anirudh',
+      subdivision: 'Chassis',
+    },
 
-        {
-            name: "Sree Chaitanya Anisingaraju",
-            subdivision: "Chassis"
-        },
+    {
+      name: 'Sreehitha Challam',
+      subdivision: 'Chassis',
+    },
 
-        {
-            name: "A.C Anirudh",
-            subdivision: "Chassis"
-        },
+    {
+      name: 'Chaganti Shanmukh Narayana',
+      subdivision: 'Chassis',
+    },
 
-        {
-            name: "Sreehitha Challam",
-            subdivision: "Chassis"
-        },
+    {
+      name: 'Abhay Aditya Chivukula',
+      subdivision: 'Chassis',
+    },
 
-        {
-            name: "Chaganti Shanmukh Narayana",
-            subdivision: "Chassis"
-        },
-        
-        {
-            name: "Abhay Aditya Chivukula",
-            subdivision: "Chassis"
-        },
+    {
+      name: 'Abhay Aditya Chivukula',
+      role: 'Project Manager',
+      subdivision: 'Mechanical',
+    },
+  ],
 
-        {
-            name: "Abhay Aditya Chivukula",
-            role: "Project Manager",
-            subdivision: "Mechanical"
-        }
+  // -------- ELECTRICAL
 
-    ],
+  Electrical: [
+    {
+      name: 'K Aruthra',
+      role: 'Team Lead',
+      subdivision: 'Electrical',
+    },
 
-    // -------- ELECTRICAL
+    {
+      name: 'Manan Tulsian',
+      role: 'Team Leader',
+      subdivision: 'Electrical ARM',
+    },
 
-    "Electrical": [
+    {
+      name: 'Prakhar Shrivastav',
+      subdivision: 'Electrical ARM',
+    },
 
-        {
-            name: "K Aruthra",
-            role: "Team Lead",
-            subdivision: "Electrical"
-        },
+    {
+      name: 'Dhipin Krishna P',
+      role: 'Team Leader',
+      subdivision: 'Communication',
+    },
 
-        {
-            name: "Manan Tulsian",
-            role: "Team Leader",
-            subdivision: "Electrical ARM"
-        },
+    {
+      name: 'S.J. Yatish',
+      subdivision: 'Communication',
+    },
 
-        {
-            name: "Prakhar Shrivastav",
-            subdivision: "Electrical ARM"
-        },
+    {
+      name: 'Valluru Hanish Sai',
+      subdivision: 'Communication',
+    },
 
-        {
-            name: "Dhipin Krishna P",
-            role: "Team Leader",
-            subdivision: "Communication"
-        },
+    {
+      name: 'Dinesh Challagolla',
+      role: 'Team Leader',
+      subdivision: 'Embedded',
+    },
 
-        {
-            name: "S.J. Yatish",
-            subdivision: "Communication"
-        },
+    {
+      name: 'Krishnapriya Vinod Pillai',
+      subdivision: 'Embedded',
+    },
 
-        {
-            name: "Valluru Hanish Sai",
-            subdivision: "Communication"
-        },
+    {
+      name: 'Reyvanth R V',
+      subdivision: 'Embedded',
+    },
 
-        {
-            name: "Dinesh Challagolla",
-            role: "Team Leader",
-            subdivision: "Embedded"
-        },
+    {
+      name: 'Lohithashwa Talamanchi',
+      subdivision: 'Embedded',
+    },
 
-        {
-            name: "Krishnapriya Vinod Pillai",
-            subdivision: "Embedded"
-        },
+    {
+      name: 'Potlapalli Greeshma',
+      role: 'Team Leader',
+      subdivision: 'Electrical - Science',
+    },
 
-        {
-            name: "Reyvanth R V",
-            subdivision: "Embedded"
-        },
+    {
+      name: 'H.S.Tarun',
+      subdivision: 'Electrical - Science',
+    },
 
-        {
-            name: "Lohithashwa Talamanchi",
-            subdivision: "Embedded",
-        },
+    {
+      name: 'Varsha Y',
+      subdivision: 'Electrical - Science',
+    },
 
-        {
-            name: "Potlapalli Greeshma",
-            role: "Team Leader",
-            subdivision: "Electrical - Science"
-        },
+    {
+      name: 'Bhargavi Paidi',
+      role: 'Project Manager',
+      subdivision: 'Electrical',
+    },
 
-        {
-            name: "H.S.Tarun",
-            subdivision: "Electrical - Science"
-        },
+    {
+      name: 'S.J. Yatish',
+      role: 'Project Manager',
+      subdivision: 'Electrical',
+    },
+  ],
 
-        {
-            name: "Varsha Y",
-            subdivision: "Electrical - Science"
-        },
-        
-        {
-            name: "Bhargavi Paidi",
-            role: "Project Manager",
-            subdivision: "Electrical"
-        },
+  // -------- CS AND AI
 
-        {
-            name: "S.J. Yatish",
-            role: "Project Manager",
-            subdivision: "Electrical"
-        }
+  'CS and AI': [
+    {
+      name: 'Adithya Nair',
+      subdivision: 'Automation',
+    },
 
-    ],
+    {
+      name: 'Chaturya',
+      subdivision: 'Automation',
+    },
 
-    // -------- CS AND AI
+    {
+      name: 'Tanish',
+      subdivision: 'Automation',
+    },
 
-    "CS and AI": [
+    {
+      name: 'Parmeshwar',
+      subdivision: 'Automation',
+    },
 
-        {
-            name: "Aditya",
-            subdivision: "Automation"
-        },
+    {
+      name: 'Shravan',
+      subdivision: 'Navigation',
+    },
 
-        {
-            name: "Chaturya",
-            subdivision: "Automation"
-        },
-        
-        {
-            name: "Tanish",
-            subdivision: "Automation"
-        },
+    {
+      name: 'Haripriya',
+      subdivision: 'Navigation',
+    },
 
-        {
-            name: "Parmeshwar",
-            subdivision: "Automation"
-        },
+    {
+      name: 'Nihal',
+      subdivision: 'Navigation',
+    },
 
-        {
-            name: "Shravan",
-            subdivision: "Navigation"
-        },
+    {
+      name: 'Ekansh',
+      subdivision: 'Navigation',
+    },
 
-        {
-            name: "Haripriya",
-            subdivision: "Navigation"
-        },
+    {
+      name: 'Rtamanyu',
+      subdivision: 'CS and AI - Science',
+    },
 
-        {
-            name: "Nihal",
-            subdivision: "Navigation"
-        },
+    {
+      name: 'Atharv',
+      subdivision: 'CS and AI - Science',
+    },
 
-        {
-            name: "Ekansh",
-            subdivision: "Navigation"
-        },
+    {
+      name: 'Praneeth',
+      subdivision: 'CS and AI - Science',
+    },
 
-        {
-            name: "Rtamanyu",
-            subdivision: "CS and AI - Science"
-        },
-        
-        {
-            name: "Atharv",
-            subdivision: "CS and AI - Science"
-        },
+    {
+      name: 'Harshada',
+      subdivision: 'CS and AI - ARM',
+    },
 
-        {
-            name: "Praneeth",
-            subdivision: "CS and AI - Science"
-        },
+    {
+      name: 'Chirayu',
+      subdivision: 'CS and AI - ARM',
+    },
 
-        {
-            name: "Harshada",
-            subdivision: "CS and AI - ARM"
-        },
+    {
+      name: 'Sudan',
+      subdivision: 'CS and AI - ARM',
+    },
 
-        {
-            name: "Chirayu",
-            subdivision: "CS and AI - ARM"
-        },
+    {
+      name: 'Vardhan',
+      role: 'Project Manager',
+      subdivision: 'CS and AI',
+    },
 
-        {
-            name: "Sudan",
-            subdivision: "CS and AI - ARM"
-        },
-
-        {
-            name: "Vardhan",
-            role: "Project Manager",
-            subdivision: "CS and AI"
-        },
-
-        {
-            name: "Sowmya",
-            role: "Project Manager",
-            subdivision: "CS and AI"
-        }
-
-    ]
-
-}
+    {
+      name: 'Sowmya',
+      role: 'Project Manager',
+      subdivision: 'CS and AI',
+    },
+  ],
+};
 
 export default teams;

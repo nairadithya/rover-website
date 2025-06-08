@@ -3,6 +3,8 @@ import Features2 from '~/components/widgets/Features2.astro';
 import Features3 from '~/components/widgets/Features3.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Layout from '~/layouts/PageLayout.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
 import Button from '~/components/ui/Button.astro';
 import { YouTube } from 'astro-embed';
 
@@ -12,40 +14,44 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <!-- About Us Section ******************* -->
-  <section class="bg-gray-50 dark:bg-slate-900 py-16">
-    <div class="container mx-auto px-4">
-      <div class="max-w-3xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6">About Us</h2>
-        <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">
-          Team Odyssey is a dynamic group of innovators committed to pushing the boundaries of technology and creativity. We work across domains to build experiences that solve real-world problems and leave a lasting impact.
-        </p>
-        <Button
-          variant="primary"
-          target="_blank"
-          text="Sponsor Us"
-          href="https://github.com/onwidget/astrowind"
-          icon="tabler:heart-handshake"
-          class="w-full sm:w-auto"
-        />
-      </div>
-    </div>
-  </section>
+  <Hero2
+    tagline="About The Rover"
+    image={{
+      src: '~/assets/images/rover-sunrise.jpg',
+      alt: 'AstroWind Hero Image',
+    }}
+  >
+    <Fragment slot="title">
+      <span class="text-accent dark:text-white">Anveshak</span>
+      <br />
+    </Fragment>
 
-  <div class="my-8 flex justify-center">
-    <div style="width:100%;max-width:900px;aspect-ratio:16/9;">
-      <iframe 
-        src="https://www.youtube.com/embed/kf187VukHJA?si=sbejPwf7c9dvRtiL" 
-        title="IRC (International Rover Challenge) | Team Odyssey | AVVB | Rover Functionality Demonstration" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen
-        style="width:100%;height:100%;border-radius:12px;"
-      ></iframe>
-    </div>
-  </div>
+    <Fragment slot="subtitle">
+      A rover capable of excelling in the IRC's diverse tasks, including extreme terrain navigation, equipment
+      servicing, autonomous operations, and scientific analysis. Our design integrates advanced mechanical systems,
+      robust electronics, and intelligent algorithms, reflecting our commitment to interdisciplinary excellence and the
+      spirit of exploration.
+    </Fragment>
+  </Hero2>
 
+  <Hero>
+    <Fragment slot="title"> About Us </Fragment>
+    <Fragment slot="subtitle"
+      >Check out this introductory video going over the various subsystems and the efforts taken so far.</Fragment
+    >
+    <Fragment slot="image">
+      <YouTube
+        id="kf187VukHJA"
+        title="IRC (International Rover Challenge) | Team Odyssey | AVVB | Rover Functionality Demonstration |"
+      />
+      <style is:inline>
+        lite-youtube {
+          margin: 0 auto;
+          max-width: 100%;
+        }
+      </style>
+    </Fragment>
+  </Hero>
   <Features3
     title="Meet our team"
     subtitle="We're a rag-tag team of students, working across departments to bring Anveshak to life."
@@ -54,38 +60,34 @@ const metadata = {
     items={[
       {
         title: 'CS Subsystem',
-        description:
-          'The CS Subsystem is in charge of programming the primitives for the rover to issue directions.',
+        description: 'The CS Subsystem is in charge of programming the primitives for the rover to issue directions.',
         icon: 'tabler:device-desktop',
       },
       {
         title: 'Automation Subsystem',
         description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
+          'Integrates all other subsystems and enables rover to act autonomously and perform all tasks programmatically.',
         icon: 'tabler:ai',
       },
       {
         title: 'Mechanial Subsystem',
-        description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
+        description: 'Responsible for physical build of the rover and ensures its movement and tolerance.',
         icon: 'tabler:settings',
       },
       {
         title: 'Electrical Subsystem',
-        description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
+        description: 'Responsible for powering the rover.',
         icon: 'tabler:bolt',
       },
       {
         title: 'Arm Subsystem',
         description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
+          'Responsible for operating the robotic arm attachment for extracting samples and manipulating objects.',
         icon: 'tabler:asset',
       },
       {
         title: 'Science Subsystem',
-        description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
+        description: 'Performs data analysis and gathers insights from the samples gathered by the rover.',
         icon: 'tabler:flask',
       },
     ]}
@@ -125,7 +127,7 @@ const metadata = {
 
   <!-- Features2 Widget ************** -->
   <Features2
-    title="Our locations"
+    title="Our location"
     tagline="Find us"
     columns={1}
     items={[
@@ -136,9 +138,7 @@ const metadata = {
     ]}
   />
 
-  <!-- Features2 Widget ************** -->
   <Features2
-    title="Technical Support"
     tagline="Contact us"
     columns={1}
     items={[

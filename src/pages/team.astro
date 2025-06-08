@@ -1,62 +1,39 @@
 ---
-
-import Features4 from "~/components/widgets/Features4.astro"
-import Layout from "~/layouts/Layout.astro"
-import HeroText from "~/components/widgets/HeroText.astro"
-import teams from "~/data/post/teams"
-
+import Features4 from '~/components/widgets/Features4.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import teams from '~/data/post/teams';
 const metadata = {
-    title: 'Our Team',
-    charset: 'UTF-8',
-    name: 'viewport',
-    content: 'width-device-width'
-}
-
-const desc = {
-
-    "CS and AI - Navigation": "Handles the movement and physical workings of rover.",
-    "CS and AI - Science": "Performs the requests to inspect and collect elements and materials from terrain.",
-    "CS and AI - Arms": "Handles the movement and workings of rover's arms."
-
-}
-
+  title: 'Our Team',
+  charset: 'UTF-8',
+  name: 'viewport',
+  content: 'width-device-width',
+};
 ---
 
 <Layout metadata={metadata}>
+  <HeroText tagline="Our team" title="Meet the members of our subdivisions!" />
 
-    <HeroText
-        tagline="Our team"
-        title="Meet the members of our subdivisions!"
-    />
+  <Features4
+    title="CS and AI"
+    subtitle="Integrates all other subsystems and enables rover to act autonomously and perform all tasks programmatically."
+    isBeforeContent={true}
+    columns={2}
+    items={teams['CS and AI']}
+  />
+  <Features4
+    title="Mechanical"
+    subtitle="Responsible for physical build of the rover and ensures its movement and tolerance."
+    isBeforeContent={true}
+    columns={2}
+    items={teams['Mechanical']}
+  />
 
-    <Features4
-        title="Mechanical"
-        subtitle="Responsible for physical build of the rover and ensures its movement and tolerance."
-        isBeforeContent={true}
-        columns={2}
-        items={
-            teams["Mechanical"]
-        }
-    />
-
-    <Features4
-        title="Electrical"
-        subtitle="Responsible for powering the rover."
-        isBeforeContent={true}
-        columns={2}
-        items={
-            teams["Electrical"]
-        }
-    />
-
-    <Features4
-        title="CS and AI"
-        subtitle="Integrates all other subsystems and enables rover to act autonomously and perform all tasks programmatically."
-        isBeforeContent={true}
-        columns={2}
-        items={
-            teams["CS and AI"]
-        }
-    />
-
+  <Features4
+    title="Electrical"
+    subtitle="Responsible for powering the rover."
+    isBeforeContent={true}
+    columns={2}
+    items={teams['Electrical']}
+  />
 </Layout>
