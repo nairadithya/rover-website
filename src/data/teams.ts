@@ -233,7 +233,7 @@ const teams = {
     },
     {
       name: 'Amara Pranav',
-      role: 'Project Manager',
+      role: 'Team Lead',
       subdivision: 'CS and AI',
     },
   ],
