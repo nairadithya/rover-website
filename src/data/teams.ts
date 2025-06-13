@@ -152,21 +152,6 @@ const teams = {
     },
 
     {
-      name: 'Rtamanyu',
-      subdivision: 'CS and AI - Science',
-    },
-
-    {
-      name: 'Atharv',
-      subdivision: 'CS and AI - Science',
-    },
-
-    {
-      name: 'Praneeth',
-      subdivision: 'CS and AI - Science',
-    },
-
-    {
       name: 'Vardhan',
       role: 'Project Manager',
       subdivision: 'CS and AI',
@@ -306,12 +291,6 @@ const teams = {
       name: 'Batchu B V Aashish',
       role: 'Team Leader',
       subdivision: 'Mechanical - ARM',
-    },
-
-    {
-      name: 'Andrew Tom',
-      role: 'Team Leader',
-      subdivision: 'CS and AI',
     },
 
     {
