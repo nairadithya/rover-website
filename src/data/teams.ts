@@ -1,4 +1,16 @@
 const teams = {
+   Mentor: [
+    {
+      name: 'Dr. Nippun kumar A A',
+      role: 'Mentor',
+    }
+  ],
+  TeamLead: [
+    {
+      name: 'Andrew Tom',
+      role: 'Team Lead',
+    }
+  ],
   Mechanical: [
     {
       name: 'Ruthvik',
@@ -226,11 +238,7 @@ const teams = {
       role: 'Project Manager',
       subdivision: 'CS and AI',
     },
-    {
-      name: 'Andrew Tom',
-      role: 'Team Leader',
-      subdivision: 'CS and AI',
-    },
+    
     {
       name: 'Amara Pranav',
       role: 'Team Lead',
