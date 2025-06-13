@@ -163,6 +163,7 @@ const teams = {
       subdivision: 'CS and AI',
     },
 
+
   ],
   Media: [
     {
@@ -179,6 +180,7 @@ const teams = {
     },
   ],
   Science: [
+    
     
     {
       name: 'Atharv',
