@@ -1,16 +1,5 @@
 const teams = {
   Mechanical: [
-    {
-      name: 'Ruthvik',
-      role: 'Team Lead',
-      subdivision: 'Mechanical',
-    },
-
-    {
-      name: 'Paida Advaith',
-      role: 'Team Leader',
-      subdivision: 'Chassis',
-    },
 
     {
       name: 'Sree Chaitanya Anisingaraju',
@@ -45,17 +34,6 @@ const teams = {
   ],
 
   Electrical: [
-    {
-      name: 'K Aruthra',
-      role: 'Team Lead',
-      subdivision: 'Electrical',
-    },
-
-    {
-      name: 'Dhipin Krishna P',
-      role: 'Team Leader',
-      subdivision: 'Communication',
-    },
 
     {
       name: 'S.J. Yatish',
@@ -65,12 +43,6 @@ const teams = {
     {
       name: 'Valluru Hanish Sai',
       subdivision: 'Communication',
-    },
-
-    {
-      name: 'Dinesh Challagolla',
-      role: 'Team Leader',
-      subdivision: 'Embedded',
     },
 
     {
@@ -86,12 +58,6 @@ const teams = {
     {
       name: 'Lohithashwa Talamanchi',
       subdivision: 'Embedded',
-    },
-
-    {
-      name: 'Potlapalli Greeshma',
-      role: 'Team Leader',
-      subdivision: 'Electrical - Science',
     },
 
     {
@@ -118,11 +84,6 @@ const teams = {
   ],
 
   Arm: [
-    {
-      name: 'Harshada',
-      role: 'Team Leader',
-      subdivision: 'CS and AI',
-    },
 
     {
       name: 'Chirayu',
@@ -133,20 +94,10 @@ const teams = {
       name: 'Sudan',
       subdivision: 'CS and AI',
     },
-    {
-      name: 'Manan Tulsian',
-      role: 'Team Leader',
-      subdivision: 'Electrical',
-    },
 
     {
       name: 'Prakhar Shrivastav',
       subdivision: 'Electrical',
-    },
-    {
-      name: 'Batchu B V Aashish',
-      role: 'Team Leader',
-      subdivision: 'Mechanical',
     },
 
     {
@@ -226,22 +177,9 @@ const teams = {
       role: 'Project Manager',
       subdivision: 'CS and AI',
     },
-    {
-      name: 'Andrew Tom',
-      role: 'Team Leader',
-      subdivision: 'CS and AI',
-    },
-    {
-      name: 'Amara Pranav',
-      role: 'Team Lead',
-      subdivision: 'CS and AI',
-    },
+
   ],
   Media: [
-    {
-      name: 'Sanskar',
-      role: 'Team Lead',
-    },
     {
       name: 'Pranav',
     },
@@ -256,10 +194,7 @@ const teams = {
     },
   ],
   Science: [
-    {
-      name: 'Greeshma',
-      role: 'Team Leader',
-    },
+    
     {
       name: 'Atharv',
       subdivision: 'Research',
@@ -293,6 +228,99 @@ const teams = {
       subdivision: 'Development',
     },
   ],
+
+  Mentors: [
+    {
+      name: 'Nippun Kumar A A',
+      role: 'Mentor'
+    }
+  ],
+
+  TeamLead: [
+    {
+      name: "Andrew Tom",
+      role: 'Team Lead'
+    },
+
+    {
+      name: 'Ruthvik',
+      role: 'Team Lead',
+      subdivision: 'Mechanical',
+    },
+
+    {
+      name: 'K Aruthra',
+      role: 'Team Lead',
+      subdivision: 'Electrical',
+    },
+
+    {
+      name: 'Amara Pranav',
+      role: 'Team Lead',
+      subdivision: 'CS and AI',
+    },
+    
+    {
+      name: 'Sanskar',
+      role: 'Team Lead',
+      subdivision: 'Media'
+    },
+
+    {
+      name: 'Paida Advaith',
+      role: 'Team Leader',
+      subdivision: 'Mechanical - Chassis',
+    },
+
+    {
+      name: 'Dhipin Krishna P',
+      role: 'Team Leader',
+      subdivision: 'Electrical - Communication',
+    },
+    
+    {
+      name: 'Dinesh Challagolla',
+      role: 'Team Leader',
+      subdivision: 'Electrical - Embedded',
+    },
+
+    {
+      name: 'Potlapalli Greeshma',
+      role: 'Team Leader',
+      subdivision: 'Electrical - Science',
+    },
+
+    {
+      name: 'Harshada',
+      role: 'Team Leader',
+      subdivision: 'CS and AI - ARM',
+    },
+
+    {
+      name: 'Manan Tulsian',
+      role: 'Team Leader',
+      subdivision: 'Electrical - ARM',
+    },
+
+    {
+      name: 'Batchu B V Aashish',
+      role: 'Team Leader',
+      subdivision: 'Mechanical - ARM',
+    },
+
+    {
+      name: 'Andrew Tom',
+      role: 'Team Leader',
+      subdivision: 'CS and AI',
+    },
+
+    {
+      name: 'Greeshma',
+      role: 'Team Leader',
+      subdivision: "Science"
+    },
+
+  ]
 };
 
 export default teams;
